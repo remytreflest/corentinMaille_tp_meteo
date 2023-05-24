@@ -7,14 +7,14 @@ const Resultats = ({ data }) => {
 
     const [celsius, setCelsius] = useState(true)
 
-    const src = file.url + file.icons.days[data.weather[0].description];
+    const src = file.url + data.weather[0].icon + ".png";
 
     function KelvinToCelsius(value){
-        return (value - 273,15).toFixed(2);
+        return (parseInt(value) - 273.15).toFixed(0);
     }
 
     function KelvinToFahrenheit(value){
-        return ((value - 273,15) * 9/5 + 32).toFixed(2);
+        return ((parseInt(value) - 273.15) * 9/5 + 32).toFixed(0);
     } 
 
     return (
