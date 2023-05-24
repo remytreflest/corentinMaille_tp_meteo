@@ -25,8 +25,10 @@ const SearchBar = ({ func }) => {
             document.querySelector("#status-label").textContent = "";
             const response = await axios.get(url)
             func(response.data);
+            console.log(response.data)
         } catch (error) {
             console.log(error)
+            func([]);
             document.querySelector("#status-label").textContent = "La ville saisie n'existe pas";
         }
     }
