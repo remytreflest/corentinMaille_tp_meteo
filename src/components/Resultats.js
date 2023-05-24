@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import file from '../assets/data/data.json'
 
 const Resultats = ({ data }) => {
