@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Resultats from '../components/Resultats'
+import SearchBar from "../components/SearchBar";
 
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
     return (
         <div>
             <h1>Météo :</h1>
+            <SearchBar/>
             { isLoading ? null : <>
                 <Resultats data={ data } />
             </>
@@ -37,4 +39,4 @@ function Home() {
     )
 }
  
-export default Home
+export default Home;
