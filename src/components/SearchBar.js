@@ -34,14 +34,22 @@ const SearchBar = ({ func }) => {
 
     return (
         <>
-            <div className="form-floating mb-3 w-50 mx-auto">
-                <input type="text" className="form-control" id="searchInput" placeholder="Entrez une ville" />
-                <label htmlFor="searchInput">Entrez une ville</label>
+            <div className="row w-50 mx-auto">
+                <b className="ps-0"><div id="status-label" className="float-start invalid-feedback mt-3 ps-0" style={{display: "block", textAlign: "left", fontSize: "110%"}}></div></b>
+            </div>
+            <div className="row w-50 mx-auto mt-1 ">
+                <div className="col-9 mx-0 px-0">
+                    <div className="form-floating w-100">
+                        <input type="text" className="form-control" id="searchInput" placeholder="Entrez une ville" style={{borderTopRightRadius: "0", borderBottomRightRadius: "0"}} />
+                        <label htmlFor="searchInput">Entrez une ville</label>
+                    </div>
+                </div>
+                <div className="col-3 mx-0 px-0">
+                    <button className="btn btn-outline-secondary w-100 h-100" style={{borderTopLeftRadius: "0", borderBottomLeftRadius: "0"}} onClick={ () => search()}>Rechercher</button>
+                </div>
             </div>
 
-            <button className="btn btn-outline-primary" onClick={ () => search()}>Rechercher</button>
 
-            <h3 id="status-label" className="text-center"></h3>
         </>
     )
 
