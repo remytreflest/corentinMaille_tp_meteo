@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
+import file from "../assets/data/data.json"
 
 
 const SearchBar = ({ func }) => {
@@ -11,7 +12,7 @@ const SearchBar = ({ func }) => {
     }
 
     useEffect(() => {
-        let url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=ded1b9ecb15b260174c41676490fb34b"
+        let url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + file.apikey
 
         // data fetching here
         if (city != null)

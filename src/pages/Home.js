@@ -25,7 +25,7 @@ function Home() {
     }
  
     return (
-        <div>
+        <div className="sub-main">
             <h1>Météo :</h1>
             <SearchBar func={ setData }/>
             { isLoading ? null : <Resultats data={ file } />}

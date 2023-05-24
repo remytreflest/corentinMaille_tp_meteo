@@ -1,5 +1,6 @@
 {
     "url": "https://openweathermap.org/img/wn/",
+    "apikey": "ded1b9ecb15b260174c41676490fb34b",
     "icons": {
         "days": {
             "clear sky": "01d.png",
