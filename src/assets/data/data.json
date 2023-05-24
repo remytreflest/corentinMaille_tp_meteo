@@ -1,0 +1,27 @@
+{
+    "url": "https://openweathermap.org/img/wn/",
+    "icons": {
+        "days": {
+            "clear sky": "01d.png",
+            "few clouds": "02d.png",
+            "scattered clouds": "03d.png",
+            "broken clouds": "04d.png",
+            "shower rain": "09d.png",
+            "rain": "10d.png",
+            "thunderstorm": "11d.png",
+            "snow": "13d.png",
+            "mist": "50d.png"
+        },
+        "night": {
+            "clear sky": "01n.png",
+            "few clouds": "02n.png",
+            "scattered clouds": "03n.png",
+            "broken clouds": "04n.png",
+            "shower rain": "09n.png",
+            "rain": "10n.png",
+            "thunderstorm": "11n.png",
+            "snow": "13n.png",
+            "mist": "50n.png"
+        }
+    }
+}
